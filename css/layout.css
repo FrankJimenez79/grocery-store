@@ -1,0 +1,63 @@
+.header {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+.header__main-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 56px;
+}
+.header__main-menu ul a {
+  color: #403c39;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+}
+.header__main-menu ul a:hover {
+  color: #f38160;
+}
+.header__main-menu ul a.active {
+  color: #f38160;
+  position: relative;
+}
+.header__main-menu ul a.active::before {
+  content: "";
+  background-color: #f38160;
+  height: 1.5px;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 28px;
+}
+.header__login-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+.header__login-menu ul a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #f38160;
+}
+.header__login-menu ul a.btn {
+  background-color: #f38160;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+}
+.header__login-menu ul a.btn:hover {
+  background-color: #403c39;
+  color: #f38160;
+}
+.header__login-menu ul a.sign-in:hover {
+  color: #403c39;
+}/*# sourceMappingURL=layout.css.map */

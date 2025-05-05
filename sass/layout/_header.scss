@@ -1,0 +1,53 @@
+@use "../abstracts/abstracts" as *;
+
+.header {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $primary-font;
+  align-items: center;
+  &__main-menu ul {
+    @include reset-list();
+    display: flex;
+    gap: 56px;
+    a {
+      color: $black-color;
+      font-weight: 300;
+      font-size: 16px;
+      text-decoration: none;
+      &:hover {
+        color: $red-color;
+      }
+      &.active {
+        color: $red-color;
+        position: relative;
+        &::before {
+          content: "";
+          background-color: $red-color;
+          height: 1.5px;
+          width: 80%;
+          position: absolute;
+          left: 10%;
+          top: 28px;
+        }
+      }
+    }
+  }
+  &__login-menu ul {
+    @include reset-list();
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: $red-color;
+      &.btn {
+        @include button();
+      }
+      &.sign-in:hover {
+        color: $black-color;
+      }
+    }
+  }
+}
