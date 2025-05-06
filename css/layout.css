@@ -141,6 +141,7 @@
 .categories {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 .categories__category {
   padding-left: 30px;
