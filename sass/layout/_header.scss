@@ -6,6 +6,7 @@
   justify-content: space-between;
   font-family: $primary-font;
   align-items: center;
+  margin-bottom: 30px;
   &__main-menu ul {
     @include reset-list();
     display: flex;
